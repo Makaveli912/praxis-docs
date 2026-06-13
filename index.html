@@ -528,7 +528,7 @@ code {
           <li>ExpiryTime must be > current block height</li>
           <li>Nonce must be unique per creator — used to derive deterministic MarketId</li>
           <li>MarketId = SHA-256(CreatorAddress ‖ Nonce)[:20]</li>
-          <li>Market spam cap: max 20 open markets simultaneously per creator</li>
+          <li>Market spam cap: max 50 open markets simultaneously per creator</li>
           <li>50 PRX finalization bounty locked — paid to whoever calls finalize_market</li>
         </ul>
       </div>
@@ -640,7 +640,7 @@ code {
             <tr><td class="mono">MIN_B0</td><td>60,000,000 uPRX</td><td>Minimum liquidity seed (60 PRX)</td></tr>
             <tr><td class="mono">CREATOR_BOND</td><td>5,000,000,000 uPRX</td><td>Creator bond locked on market creation (5,000 PRX)</td></tr>
             <tr><td class="mono">FINALIZATION_BOUNTY</td><td>50,000,000 uPRX</td><td>Bounty paid to finalizer (50 PRX)</td></tr>
-            <tr><td class="mono">MAX_OPEN_MARKETS</td><td>20</td><td>Max simultaneous open markets per creator</td></tr>
+            <tr><td class="mono">MAX_OPEN_MARKETS</td><td>50</td><td>Max simultaneous open markets per creator</td></tr>
             <tr><td class="mono">MARKET_FEE_BPS</td><td>200</td><td>Market fee on predictions (2%)</td></tr>
             <tr><td class="mono">MAX_POSITION_BPS</td><td>2000</td><td>Max per-address position (20% of pool)</td></tr>
           </table>
